@@ -5,9 +5,9 @@
         "TargetService": {
           "Type": "AWS::ECS::Service",
           "Properties": {
-            "TaskDefinition": "your arn for your definition",
+            "TaskDefinition": "arn:aws:ecs:us-east-1:471112871821:task-definition/codepipeline-task:1",
             "LoadBalancerInfo": {
-              "ContainerName": "myservice",
+              "ContainerName": "hello-world",
               "ContainerPort": 80
             }
           }
