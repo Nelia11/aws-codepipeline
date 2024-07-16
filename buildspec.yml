@@ -26,6 +26,8 @@ phases:
       - ls -al
       - echo Checking the content of imagedefinitions.json
       - cat imagedefinitions.json
-artifacts:
+ artifacts:
   files:
-    - "imagedefinitions.json"
+    - appspec.json
+    - imagedefinitions.json
+  discard-paths: yes
